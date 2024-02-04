@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../css/main_navbar.css">
-  <script type="text/javascript" src="../js/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css/bootstrap.css">  <!-- css 부트스트랩-->
+  <link rel="stylesheet" type="text/css" href="../css/main_navbar.css">              <!-- 개별 css -->
+  <script type="text/javascript" src="../js/bootstrap.js/bootstrap.js"></script>     <!-- js 부트스트랩 -->
+  <script type="text/javascript" src="../js/main_navbar.js"></script>                <!-- 개별 js -->
   <meta charset="UTF-8">
 </head>
 <body>
-  <div class="navbar bg-body-tertiary px-3 mb-3">
-    <p class="navbar-brand" href="#">독독 업주용</p>
-    <div class="dropdown-container"> 
-      <p class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#A" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">A</p>
-        <div class="collapse navbar-collapse dropdown" id="A">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">exA</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">exA</a>
-            </li>
-          </ul>
+  <div class="navbar bg-body-tertiary">                    <!-- 상단 nav바 -->
+    <a class="navbar-brand" href="#">독독 업주용</a>        <!-- 상단 nav바의 제목 -->
+
+    <div class="navbar_dropdown">                          <!-- navbar의 메뉴A -->
+      <a onclick="Navbar_Scroll('sub_menuA')">호텔관리</a>  <!-- 이벤트 Navbar_Scroll()사용 -->
+        <div class="sub_menuA">
+          <li>
+            <a href="">exA</a>
+          </li>
+          <li>
+            <a href="">exA</a>
+          </li>
         </div>
     </div>
-    <div class="dropdown-container"> 
-      <p class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#B" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">B</p>
-        <div class="collapse navbar-collapse dropdown" id="B">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">exB</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">exB</a>
-            </li>
-          </ul>
+
+    <div class="navbar_dropdown">                           <!-- navbar의 메뉴B -->
+      <a onclick="Navbar_Scroll('sub_menuB')">일정관리</a>
+        <div class="sub_menuB">
+          <li>
+            <a href="">달력</a>
+          </li>
+          <li>
+            <a href="">exC</a>
+          </li>
         </div>
     </div>
-    <div class="dropdown-container"> 
-      <p class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#C" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">C</p>
-        <div class="collapse navbar-collapse dropdown" id="C">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">exC</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">exC</a>
-            </li>
-          </ul>
+
+    <div class="navbar_dropdown">                           <!-- navbar의 메뉴C -->
+      <a onclick="Navbar_Scroll('sub_menuC')">메뉴</a>
+        <div class="sub_menuC">
+          <li>
+            <a href="">정보</a>
+          </li>
+          <li>
+            <a href="">이슈</a>
+          </li>
         </div>
     </div>
-  </div>
 </body>
+</html>

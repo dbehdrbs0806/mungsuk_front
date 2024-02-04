@@ -1,3 +1,46 @@
-.dropdown-container .dropdown {
-    position: absolute    
+/* 화면크기 800부터 1499까지  */
+@media screen and (min-width: 800px) and (max-width: 1499px) {
+    .navbar-brand {
+        font-size: 30px
+    }
+    .navbar_dropdown {
+        font-size: 18px;
+    }
+}
+/* 화면크기 1500부터  */
+@media screen and (min-width: 1500px) {
+    .navbar-brand {
+        font-size: 60px
+    }
+    .navbar_dropdown {
+        font-size: 36px;
+    }
+}
+/* 애니메이션 keyframes */
+@keyframes dropdown_animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+.navbar_dropdown {
+    padding: 20px;
+}
+
+
+.sub_menuA, .sub_menuB, .sub_menuC {
+    display: none;    /* js에서 함수의 작동을 위해 */
+    position: absolute;
+    animation: dropdown_animate 0.3s ease;
+}
+/* 하이퍼링크의 밑줄, 색상 없애는 css */
+li, a, a:visited {
+    list-style:none;
+    text-decoration:none;
+    padding:10px;
+    color: black;
 }

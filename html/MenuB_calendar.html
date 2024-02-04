@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css/bootstrap.css">  <!-- css 부트스트랩-->
+    <link rel="stylesheet" type="text/css" href="../css/dog_info.css">
+    <script type="text/javascript" src="../js/bootstrap.js/bootstrap.js"></script>     <!-- js 부트스트랩 -->
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="prev">
+      <a href="{% url 'info:main' %}?{{ prev_month }}"><image src="../static/left_calendar.png" style="max-width:80px;max-height:150px;transform: rotate(180deg)"></a>
+    </div>
+    <div class="next">
+      <a href="{% url 'info:main' %}?{{ next_month }}"><image src="../static/right_calendar.png" style="max-width:80px;max-height:150px"></image></a>
+    </div>
+  </body>
+</html>

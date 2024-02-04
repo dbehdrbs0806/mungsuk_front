@@ -1,0 +1,28 @@
+/* 화면크기 800부터 1499까지  */ 
+@media screen and (min-width: 800px) and (max-width: 1499px) {
+    .MenuC_check {
+        border: 1px gray solid;
+        margin: 100px 65px;
+        padding: 100px;
+    }
+    .MenuC_button {
+        width: 70px;
+        height: 70px;
+        margin: 0 80px; 
+    }
+}
+
+/* 화면크기 1500이상  */
+@media screen and (min-width: 1500px) { 
+    .MenuC_check{
+        border: 1px gray solid;
+        margin: 120px 85px;
+        padding: 120px;
+    }
+    .MenuC_button {
+        width: 100px;
+        height: 100px;
+        margin: 0 100px; 
+        
+    }
+}

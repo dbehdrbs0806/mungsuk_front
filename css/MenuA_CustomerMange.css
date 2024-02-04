@@ -1,0 +1,39 @@
+@media screen and (min-width: 800px) and (max-width: 1499px) {
+  table {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 2px black solid;
+    border-radius: 8px;
+    margin: 100px 310px;
+  
+  }
+
+  td {
+    border: 1px gray solid;
+    padding: 10px;
+    text-align: center;
+  }
+}
+/* 화면크기 1500부터  */
+@media screen and (min-width: 1500px) {
+  table {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 2px black solid;
+    border-radius: 8px;
+    margin: 140px 400px;
+  
+  }
+
+  td {
+    border: 1px gray solid;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
